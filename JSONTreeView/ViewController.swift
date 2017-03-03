@@ -43,6 +43,8 @@ class ViewController: UIViewController {
         let formatBBI = UIBarButtonItem(title: "格式化", style: .done, target: self, action: #selector(ViewController.format))
         formatBBI.isEnabled = false
         navigationItem.rightBarButtonItem = formatBBI
+        
+        automaticallyAdjustsScrollViewInsets = false
     }
     
     func format() {
